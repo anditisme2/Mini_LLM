@@ -6,7 +6,7 @@ Following the tutorial step by step, learning tokenization, embeddings, self-att
 
 ## Status
 
-Work in progress, following the tutorial sequentially. Will update this as I go.
+Core tutorial complete: `bigram.ipynb` (baseline) and `gpt.ipynb` (full GPT-style transformer).
 
 ## Goals
 
@@ -55,14 +55,27 @@ jupyter notebook
 
 ## Progress / Topics Covered
 
-- [ ] Environment setup (venv, CUDA, Jupyter)
-- [ ] Data preprocessing & tokenization
-- [ ] Bigram language model
-- [ ] Self-attention mechanism
-- [ ] Multi-head attention
-- [ ] Transformer blocks
-- [ ] Training loop & loss tracking
-- [ ] Text generation from the trained model
+- [x] Environment setup (venv, CUDA, Jupyter) - `torch_examples.ipynb`
+- [x] Data preprocessing & tokenization
+- [x] Bigram language model
+- [x] Self-attention mechanism
+- [x] Multi-head attention
+- [x] Transformer blocks
+- [x] Training loop & loss tracking
+- [x] Text generation from the trained model
+
+## Files
+
+- `torch_examples.ipynb` - PyTorch building blocks (tensors, tril, softmax, embeddings)
+- `bigram.ipynb` - character-level bigram baseline
+- `gpt.ipynb` - self-attention, multi-head attention, transformer blocks, training, generation
+- `sherlock_holmes.txt` - training corpus
+
+## Next steps
+
+- Try a subword tokenizer (BPE / tiktoken) instead of characters
+- Scale up `n_embd`, `n_layer`, `block_size` on a GPU
+- Add learning-rate scheduling and gradient clipping
 
 ## Acknowledgements
 
